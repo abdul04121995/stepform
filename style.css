@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  padding-block: 0.5rem;
+}
+.num {
+  margin-bottom: 0.3rem;
+}
+.holder {
+  border: 1px solid gray;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.question {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 1rem + 0.2vw, 1rem + 0.4vw);
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.input-holder {
+  background-color: mediumorchid;
+  border-radius: 9px;
+  flex: 1 0 200px;
+  padding-inline: 0.2rem;
+  /* padding: 0.2rem 0.5rem; */
+  /* text-align: center; */
+  font-size: clamp(0.8rem + 0.1vw, 0.8rem + 0.4vw, 0.8rem + 0.6vw);
+}
+@media screen and (650px < width < 870px) {
+  .input-holder {
+    flex: 0 0 220px;
+  }
+}
+label {
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+}
+.banner {
+  padding: 1rem 0.6rem;
+  border: 1px solid gray;
+}
+.score {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.btn-holder {
+  text-align: center;
+}
+.load-it {
+  text-align: center;
+  font-size: calc(4rem + 0.5vw);
+}
+.btn,
+.starter,
+.reset {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.7rem 1.7rem;
+  font-weight: bold;
+}
+.holder.red {
+  background-color: red;
+  transition: background-color 0.5s ease-in-out;
+}
